@@ -17,15 +17,20 @@
       ]
     }
   },
-  "onCreateCommand": "pwsh -File .devcontainer/install.ps1",
-  "postStartCommand": "",
   "remoteUser": "vscode",
-  "remoteEnv": {},
+  "onCreateCommand": "pwsh -File .devcontainer/install.ps1",
+  "appPort": [
+    "1455:1455"
+  ],
+  "postStartCommand": "",
   "features": {
     "ghcr.io/devcontainers/features/azure-cli:1": {
       "version": "latest",
       "installBicep": true,
-      "extensions": ["azure-devops", "resource-graph"]
+      "extensions": [
+        "azure-devops",
+        "resource-graph"
+      ]
     },
     "ghcr.io/devcontainers/features/powershell:1": {
       "modules": [
