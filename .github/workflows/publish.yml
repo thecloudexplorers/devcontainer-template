@@ -34,5 +34,6 @@ jobs:
           publish-templates: "true"
           base-path-to-templates: "./src"
           generate-docs: "true"
+          namespace: ${{ github.repository_owner }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
