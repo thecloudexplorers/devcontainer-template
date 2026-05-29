@@ -7,4 +7,5 @@ try {
   iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/wesleycamargo/terminal-bootstrap/refs/heads/master/terminal-setup.ps1'))
 } catch {
   Write-Warning "terminal-bootstrap failed: $_"
+  
 }
