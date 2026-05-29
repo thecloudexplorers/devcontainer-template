@@ -1,0 +1,10 @@
+{
+  "id": "azure-engineering",
+  "version": "1.0.0",
+  "name": "Azure Engineering",
+  "description": "PowerShell development environment with Azure CLI, Bicep, GitHub CLI, Claude Code, and draw.io. Includes Az PowerShell modules and PSRule for Azure governance.",
+  "documentationURL": "https://github.com/thecloudexplorers/devcontainer-template",
+  "publisher": "thecloudexplorers",
+  "platforms": ["Azure"],
+  "keywords": ["powershell", "azure", "bicep", "iac", "claude-code", "drawio"]
+}
