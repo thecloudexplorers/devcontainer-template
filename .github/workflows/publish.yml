@@ -9,10 +9,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
     steps:
       - uses: actions/checkout@v4
+
+      - name: Bump minor version
+        run: |
+          FILE="src/azure-engineering/devcontainer-template.json"
+          VERSION=$(jq -r '.version' "$FILE")
+          MAJOR=$(echo "$VERSION" | cut -d. -f1)
+          MINOR=$(echo "$VERSION" | cut -d. -f2)
+          NEW_VERSION="$MAJOR.$((MINOR + 1)).0"
+          jq --arg v "$NEW_VERSION" '.version = $v' "$FILE" > tmp.json && mv tmp.json "$FILE"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$FILE"
+          git commit -m "chore: bump minor version to $NEW_VERSION [skip ci]"
+          git push
 
       - name: Publish Templates
         uses: devcontainers/action@v1
