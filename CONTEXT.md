@@ -1,6 +1,6 @@
 # PowerShell & Azure Dev Container Template
 
-A single Dev Container Template published to the OCI registry at ghcr.io/thecloudexplorers/devcontainer/azure-engineering. It bundles PowerShell, Azure CLI, Bicep, GitHub CLI, Claude Code, and draw.io into a ready-to-use development environment.
+A single Dev Container Template published to the OCI registry at ghcr.io/thecloudexplorers/devcontainer-template/azure-engineering. It bundles PowerShell, Azure CLI, Bicep, GitHub CLI, Claude Code, and draw.io into a ready-to-use development environment.
 
 ## Language
 
