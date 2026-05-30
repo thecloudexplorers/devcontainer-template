@@ -9,3 +9,7 @@ A reusable template for adding Dev Container setup to other repositories. The `.
 3. Commit and push the changes
 
 That's it! Your repository now has a Dev Container configuration.
+
+## Template Details
+
+This template is published to the OCI registry at `ghcr.io/thecloudexplorers/engineering-tools:latest`. It includes PowerShell, Azure CLI, Bicep, GitHub CLI, Claude Code CLI, draw.io, Az PowerShell modules, and PSRule.Rules.Azure.
