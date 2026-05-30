@@ -17,7 +17,7 @@ jobs:
 
       - name: Bump minor version
         run: |
-          FILE="src/azure-engineering/devcontainer-template.json"
+          FILE="src/engineering-tools/devcontainer-template.json"
           VERSION=$(jq -r '.version' "$FILE")
           MAJOR=$(echo "$VERSION" | cut -d. -f1)
           MINOR=$(echo "$VERSION" | cut -d. -f2)
@@ -33,7 +33,7 @@ jobs:
         uses: devcontainers/action@v1
         with:
           publish-templates: "true"
-          base-path-to-templates: "./src/azure-engineering"
+          base-path-to-templates: "./src/engineering-tools"
           generate-docs: "true"
           namespace: ${{ github.repository_owner }}
         env:
