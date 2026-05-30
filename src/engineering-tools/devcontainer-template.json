@@ -1,6 +1,6 @@
 {
   "id": "engineering-tools",
-  "version": "1.5.0",
+  "version": "1.0.0",
   "name": "Engineering Tools",
   "description": "PowerShell development environment with Azure CLI, Bicep, GitHub CLI, Claude Code, and draw.io. Includes Az PowerShell modules and PSRule for Azure governance.",
   "documentationURL": "https://github.com/thecloudexplorers/devcontainer-template",
