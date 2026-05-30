@@ -44,6 +44,6 @@ jobs:
           publish-templates: "true"
           base-path-to-templates: "./src/engineering-tools"
           generate-docs: "true"
-          templates-namespace: ${{ github.repository_owner }}
+          templates-namespace: ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
