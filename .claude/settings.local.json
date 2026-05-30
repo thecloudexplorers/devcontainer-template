@@ -4,7 +4,8 @@
       "WebFetch(domain:c4model.com)",
       "Bash(drawio --export --format png --output /workspaces/da/cloud-architecture/Cloud-Architecture/platform-landing-zone/diagram.png /workspaces/da/cloud-architecture/Cloud-Architecture/platform-landing-zone/diagram.drawio)",
       "Bash(drawio --no-sandbox --export --format png --output /workspaces/da/cloud-architecture/Cloud-Architecture/platform-landing-zone/diagram.png /workspaces/da/cloud-architecture/Cloud-Architecture/platform-landing-zone/diagram.drawio)",
-      "WebFetch(domain:containers.dev)"
+      "WebFetch(domain:containers.dev)",
+      "Bash(git *)"
     ]
   }
 }
