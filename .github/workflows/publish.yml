@@ -33,7 +33,7 @@ jobs:
         uses: devcontainers/action@v1
         with:
           publish-templates: "true"
-          base-path-to-templates: "./src"
+          base-path-to-templates: "./src/azure-engineering"
           generate-docs: "true"
           namespace: ${{ github.repository_owner }}
         env:
