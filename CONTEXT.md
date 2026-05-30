@@ -38,7 +38,7 @@ _Avoid_: plugin library, command set
 
 ### engineering-tools Template
 
-The `engineering-tools` Template is published to the OCI registry at `ghcr.io/thecloudexplorers/engineering-tools:latest`. It bundles PowerShell, Azure CLI, Bicep, GitHub CLI, Claude Code, draw.io, and a Skill Library into a ready-to-use development environment.
+The `engineering-tools` Template is published to the OCI registry at `ghcr.io/thecloudexplorers/devcontainer-template/engineering-tools:latest`. It bundles PowerShell, Azure CLI, Bicep, GitHub CLI, Claude Code, draw.io, and a Skill Library into a ready-to-use development environment.
 
 **Container Configuration**:
 The `.devcontainer/` folder that defines the Template's runtime: `Dockerfile` (system-level installs — tools, CLI binaries, PowerShell modules), `devcontainer.json` (VS Code settings, extensions, lifecycle hooks), and `install.ps1` (post-create user-level terminal setup).
