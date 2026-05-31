@@ -60,11 +60,11 @@
   },
   "skills": {
     "paths": [
-      ".agents/skills"
+      "../.agents/skills"
     ]
   },
   "instructions": [
-    "AGENTS.md",
-    ".agents/**/*.md"
+    "../AGENTS.md",
+    "../.agents/**/*.md"
   ]
 }

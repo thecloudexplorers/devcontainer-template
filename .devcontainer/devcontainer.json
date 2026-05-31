@@ -26,5 +26,7 @@
   "remoteUser": "vscode",
   "onCreateCommand": "pwsh -File .devcontainer/install.ps1",
   "postStartCommand": "",
-  "remoteEnv": {}
+  "remoteEnv": {
+    "OPENCODE_CONFIG": "${containerWorkspaceFolder}/.opencode/opencode.json"
+  }
 }
