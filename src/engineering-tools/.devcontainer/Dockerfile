@@ -42,6 +42,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
 # Install Claude Code CLI
 RUN npm install -g @anthropic-ai/claude-code
 
+# Install OpenCode CLI
+RUN npm install -g opencode-ai
+
 # Install Azure CLI
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash \
     && az extension add --name azure-devops \
@@ -73,7 +76,7 @@ RUN pwsh -NoProfile -Command " \
 # Install draw.io Desktop (latest amd64 .deb from GitHub releases)
 RUN apt-get update \
     && DRAWIO_URL=$(curl -sL https://api.github.com/repos/jgraph/drawio-desktop/releases/latest \
-        | python3 -c "import json,sys; data=json.load(sys.stdin); print(next(a['browser_download_url'] for a in data['assets'] if 'amd64' in a['name'] and a['name'].endswith('.deb')))") \
+    | python3 -c "import json,sys; data=json.load(sys.stdin); print(next(a['browser_download_url'] for a in data['assets'] if 'amd64' in a['name'] and a['name'].endswith('.deb')))") \
     && curl -L "$DRAWIO_URL" -o /tmp/drawio.deb \
     && apt-get install -y /tmp/drawio.deb \
     && rm /tmp/drawio.deb \

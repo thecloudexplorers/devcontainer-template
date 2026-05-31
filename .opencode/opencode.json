@@ -59,12 +59,21 @@
     }
   },
   "skills": {
-    "paths": [
-      "../.agents/skills"
-    ]
+    "paths": ["../.agents/skills"]
   },
-  "instructions": [
-    "../AGENTS.md",
-    "../.agents/**/*.md"
-  ]
+  "instructions": ["../AGENTS.md", "../.agents/**/*.md"],
+  "provider": {
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio (local)",
+      "options": {
+        "baseURL": "http://192.168.0.182:1234/v1"
+      },
+      "models": {
+        "google/gemma-4-e4b": {
+          "name": "Gemma 4-e4b (local)"
+        }
+      }
+    }
+  }
 }
