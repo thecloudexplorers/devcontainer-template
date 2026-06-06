@@ -4,23 +4,21 @@ A PowerShell-based dev container for Azure and Infrastructure-as-Code engineerin
 
 ## Usage
 
-### Image URL
+### Via VS Code
 
-Copy the image URL:
+1. Copy the image URL:
 
 ```
 ghcr.io/thecloudexplorers/devcontainer-template/engineering-tools:latest
 ```
 
-### Via VS Code
-
-1. Open the command palette (`Ctrl+Shift+P` / `Cmd+Shift+P` / `F1`)
-2. Run **Dev Containers: Add Dev Container Configuration Files**
+2. Open the command palette (`Ctrl+Shift+P` / `Cmd+Shift+P` / `F1`)
+3. Run **Dev Containers: Add Dev Container Configuration Files**
    ![alt text](docs/images/add-devcontainer.png)
-3. In the search box, type the URL of the dev container image: `ghcr.io/thecloudexplorers/devcontainer-template/engineering-tools:latest`
+4. In the search box, type the URL of the dev container image: `ghcr.io/thecloudexplorers/devcontainer-template/engineering-tools:latest`
    ![alt text](docs/images/devcontainer-url.png)
-4. Select the image and follow the prompts to create the dev container configuration files.
-5. Reopen the folder in the dev container when prompted.
+5. Select the image and follow the prompts to create the dev container configuration files.
+6. Reopen the folder in the dev container when prompted.
 
 ### Via `devcontainer.json`
 
