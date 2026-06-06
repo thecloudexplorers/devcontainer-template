@@ -2,30 +2,13 @@
 
 A PowerShell-based dev container for Azure and Infrastructure-as-Code engineering. Provides a fully configured environment for cloud development, governance, and AI-assisted workflows.
 
-## Included tools
-
-| Tool                  | Purpose                                    |
-| --------------------- | ------------------------------------------ |
-| PowerShell 7          | Primary shell                              |
-| Azure CLI             | Azure resource management                  |
-| Bicep                 | IaC authoring and deployment               |
-| GitHub CLI            | Repository and PR workflows                |
-| Claude Code CLI       | AI-assisted development                    |
-| draw.io               | Architecture diagramming                   |
-| Az PowerShell modules | Azure automation and scripting             |
-| PSRule.Rules.Azure    | Azure governance and compliance validation |
-
-## VS Code extensions
-
-| Extension             | Purpose                  |
-| --------------------- | ------------------------ |
-| Bicep                 | Bicep language support   |
-| Azure Resource Groups | Azure portal integration |
-| Prettier              | Code formatting          |
-| Live Share            | Collaborative editing    |
-| Claude Dev            | AI code assistant        |
-
 ## Usage
+
+## Image URL
+
+```
+ghcr.io/thecloudexplorers/devcontainer-template/engineering-tools:latest
+```
 
 ### Via VS Code
 
@@ -50,5 +33,28 @@ A PowerShell-based dev container for Azure and Infrastructure-as-Code engineerin
 Optimised for Azure-hosted development environments (GitHub Codespaces, Azure Container Instances, Azure Dev Box).
 
 ## Repository
+
+## Included tools
+
+| Tool                  | Purpose                                    |
+| --------------------- | ------------------------------------------ |
+| PowerShell 7          | Primary shell                              |
+| Azure CLI             | Azure resource management                  |
+| Bicep                 | IaC authoring and deployment               |
+| GitHub CLI            | Repository and PR workflows                |
+| Claude Code CLI       | AI-assisted development                    |
+| draw.io               | Architecture diagramming                   |
+| Az PowerShell modules | Azure automation and scripting             |
+| PSRule.Rules.Azure    | Azure governance and compliance validation |
+
+## VS Code extensions
+
+| Extension             | Purpose                  |
+| --------------------- | ------------------------ |
+| Bicep                 | Bicep language support   |
+| Azure Resource Groups | Azure portal integration |
+| Prettier              | Code formatting          |
+| Live Share            | Collaborative editing    |
+| Claude Dev            | AI code assistant        |
 
 [github.com/thecloudexplorers/devcontainer-template](https://github.com/thecloudexplorers/devcontainer-template)
