@@ -87,3 +87,5 @@ RUN printf '#!/usr/bin/env bash\nxvfb-run -a drawio --no-sandbox "$@"\n' > /usr/
     && chmod +x /usr/local/bin/drawio-cli
 
 USER $USERNAME
+
+RUN npx --yes skills add thecloudexplorers/skills --all -g -y

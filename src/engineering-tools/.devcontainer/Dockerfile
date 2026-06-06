@@ -76,7 +76,7 @@ RUN pwsh -NoProfile -Command " \
 # Install draw.io Desktop (latest amd64 .deb from GitHub releases)
 RUN apt-get update \
     && DRAWIO_URL=$(curl -sL https://api.github.com/repos/jgraph/drawio-desktop/releases/latest \
-    | python3 -c "import json,sys; data=json.load(sys.stdin); print(next(a['browser_download_url'] for a in data['assets'] if 'amd64' in a['name'] and a['name'].endswith('.deb')))") \
+        | python3 -c "import json,sys; data=json.load(sys.stdin); print(next(a['browser_download_url'] for a in data['assets'] if 'amd64' in a['name'] and a['name'].endswith('.deb')))") \
     && curl -L "$DRAWIO_URL" -o /tmp/drawio.deb \
     && apt-get install -y /tmp/drawio.deb \
     && rm /tmp/drawio.deb \
@@ -87,3 +87,5 @@ RUN printf '#!/usr/bin/env bash\nxvfb-run -a drawio --no-sandbox "$@"\n' > /usr/
     && chmod +x /usr/local/bin/drawio-cli
 
 USER $USERNAME
+
+RUN npx --yes skills add thecloudexplorers/skills --all -g -y
