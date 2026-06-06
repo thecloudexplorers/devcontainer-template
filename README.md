@@ -4,7 +4,9 @@ A PowerShell-based dev container for Azure and Infrastructure-as-Code engineerin
 
 ## Usage
 
-## Image URL
+### Image URL
+
+Copy the image URL:
 
 ```
 ghcr.io/thecloudexplorers/devcontainer-template/engineering-tools:latest
