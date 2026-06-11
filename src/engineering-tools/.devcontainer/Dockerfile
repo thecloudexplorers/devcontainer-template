@@ -45,6 +45,12 @@ RUN npm install -g @anthropic-ai/claude-code
 # Install OpenCode CLI
 RUN npm install -g opencode-ai
 
+# Install Pi Coding Agent CLI
+RUN npm install -g --ignore-scripts @earendil-works/pi-coding-agent
+
+# Install Hermes Agent CLI
+RUN curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+
 # Install Azure CLI
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash \
     && az extension add --name azure-devops \

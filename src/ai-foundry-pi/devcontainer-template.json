@@ -1,0 +1,10 @@
+{
+  "id": "ai-foundry-pi",
+  "version": "1.0.0",
+  "name": "AI Foundry Pi",
+  "description": "PowerShell development environment focused on Pi Coding Agent authentication and usage with Azure AI Foundry.",
+  "documentationURL": "https://github.com/thecloudexplorers/devcontainer-template",
+  "publisher": "thecloudexplorers",
+  "platforms": ["Azure"],
+  "keywords": ["powershell", "azure", "azure-foundry", "pi", "ai-foundry", "devcontainer"]
+}
